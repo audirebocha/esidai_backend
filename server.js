@@ -17,7 +17,7 @@ import data from './APIs/data.js'
 const app=express()
 app.use(bodyParser.json())
 app.use(cors({
-    origin:'http://localhost:5173',
+    origin:['http://localhost:5173',"https://tujuane-messenger.web.app"],
     methods: ['POST', 'PUT', 'GET', 'OPTIONS', 'HEAD'],
     credentials: true
 }));
